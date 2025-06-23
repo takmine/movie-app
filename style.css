@@ -1,0 +1,125 @@
+/* 全体の基本設定 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+    line-height: 1.7;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 20px;
+}
+
+/* サイト全体のコンテナ */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px 40px 40px 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+}
+
+/* 大見出し (H1) */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    letter-spacing: -0.05em;
+}
+
+/* 各映画のセクション */
+.movie-item {
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.movie-item:last-child {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+/* 映画タイトル (H2) */
+.movie-item h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.movie-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.rating {
+    color: #f5b300;
+    font-size: 1.2rem;
+}
+
+.review-text {
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 3px solid #e5e5e5;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 50px;
+    color: #888;
+}
+
+
+/* リンク */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ボタンやリンクのスタイル */
+.button, button[type="submit"] {
+    display: inline-block;
+    background-color: #007aff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s, transform 0.2s;
+}
+.button:hover, button[type="submit"]:hover {
+    background-color: #005ec4;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* フォームのスタイル */
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* paddingを含めて幅100%にする */
+}
+
+textarea {
+    resize: vertical;
+}
