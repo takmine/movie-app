@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: takmine-movie-app   # あなたのサイト名（自由に変更可）
+    runtime: php
+    plan: free
+    buildCommand: 'echo "No build step"'
+    startCommand: 'php -S 0.0.0.0:10000 -t .'
+    envVars:
+      - key: RENDER
+        value: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: movie-db      # Renderで作成するDB名（このままでOK）
+          property: internalDatabaseUrl
+
+  - type: psql
+    name: movie-db          # 上のDB名と合わせる
+    plan: free
